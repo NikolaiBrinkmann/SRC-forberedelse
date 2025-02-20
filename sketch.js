@@ -16,6 +16,9 @@ function setup() {
   let quinticButton = createButton("Kvintisk Bezier");
   quinticButton.position(75, 250);
   quinticButton.mousePressed(quinticBezier);
+  let nDegreeButton = createButton("n. grad Bezier");
+  nDegreeButton.position(200, 250);
+  nDegreeButton.mousePressed(nDegreeBezier);
 }
 
 function linearBezier() {
@@ -36,4 +39,8 @@ function quarticBezier() {
 
 function quinticBezier() {
   window.location.href = "quinticFrame.html";
+}
+
+function nDegreeBezier() {
+  window.location.href = "nDegreeFrame.html";
 }
